@@ -1,0 +1,43 @@
+/* https://www.w3schools.com/css/css3_box-sizing.asp#:~:text=With%20the%20CSS%20box%2Dsizing,are%20the%20same%20size%20now! */
+* {
+    box-sizing: border-box;
+}
+
+html, body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+}
+
+header {
+    text-align: center;
+}
+
+header, section {
+    border: 1px solid;
+}
+
+/* change size of fields */
+input {
+    
+}
+
+/* Content */
+/* https://www.w3schools.com/howto/howto_css_two_columns.asp */
+.content {
+    display: flex;
+    /* https://stackoverflow.com/questions/44153866/how-can-i-get-the-height-of-an-element-using-css-only/44156191 */
+    /* apparently calculates height dynamically */
+    height: calc(100% - 20px);
+}
+
+/* https://stackoverflow.com/questions/44645465/when-using-height-100vh-for-the-container-vertical-scrollbar-appears */
+.column {
+    flex: 50%;
+    /* height: 100vh; */
+    /* height: 100%; */
+    /* height: calc(100% - 10px); */
+}
