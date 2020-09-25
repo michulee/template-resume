@@ -13,91 +13,193 @@
         </div>
     </header>
     <div class="content">
-        <section class="template column">
+        <!-- Template Section -->
+        <section class="template">
             <!-- Basic Information -->
             <div><h1>Basic Information</h1></div>
-            <div>
-                <label for="name">Full Name</label>
-                <input type="text" placeholder="John Doe">
+            <div class="column-group">
+                <div class="column-desc">
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="column-input">
+                    <input type="text" id="name">
+                </div>
             </div>
-            <div>
-                <label for="email">E-mail</label>
-                <input type="email" placeholder="johndoe@gmail.com">
+            <div class="column-group">
+                <div class="column-desc">
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="column-input">
+                    <input type="email">
+                </div>
             </div>
-            <div>
-                <label for="phone">Phone Number</label>
-                <input type="tel" placeholder="????">
+            <div class="column-group">
+                <div class="column-desc">
+                    <label for="phone">Phone Number</label>
+                </div>
+                <div class="column-input">
+                    <input type="tel">
+                </div>
             </div>
             <!-- Objective -->
             <div><h1>Objective</h1></div>
-            <div>
-                <label for="objective">Objective</label>
-                <input type="text">
+            <div class="column-group">
+                <div class="column-desc">
+                    <label for="objective">Objective</label>
+                </div>
+                <div class="column-input">
+                    <input type="text">
+                </div>
             </div>
             <!-- Education -->
             <div><h1>Education</h1></div>
-            <div>
-                <label for="schoolName">School Name</label>
-                <input type="text">
+            <div class="column-group">
+                <div class="column-desc">
+                    <label for="schoolName">School Name</label>
+                </div>
+                <div class="column-input">
+                    <input type="text">
+                </div>
             </div>
-            <div>
-                <label for="schoolStart">Start</label>
-                <input type="text">
-                <label for="schoolEnd">End</label>
-                <input type="text">
+            <div class="column-group">
+                <div class="column-desc">
+                    <label for="schoolStart">Start</label>
+                </div>
+                <div class="column-input">
+                    <input type="text">
+                </div>
             </div>
-            <div>
-                <label for="schoolLocation">Location</label>
-                <input type="text">
+            <div class="column-group">
+                <div class="column-desc">
+                    <label for="schoolEnd">End</label>
+                </div>
+                <div class="column-input">
+                    <input type="text">
+                </div>
             </div>
-            <div>
-                <label for="major">Major</label>
-                <input type="text">
+            <div class="column-group">
+                <div class="column-desc">
+                    <label for="schoolLocation">Location</label>
+                </div>
+                <div class="column-input">
+                    <input type="text">
+                </div>
             </div>
-            <div>
-                <label for="degree">Degree</label>
-                <input type="degree" placeholder="BS">
+            <div class="column-group">
+                <div class="column-desc">
+                    <label for="major">Major</label>
+                </div>
+                <div class="column-input">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="column-group">
+                <div class="column-desc">
+                    <label for="degree">Degree</label>
+                </div>
+                <div class="column-input">
+                    <input type="degree">
+                </div>
             </div>
             <!-- Work Experience -->
             <div><h1>Work Experience</h1></div>
-            <div>
-                <label for="jobTitle">Job Title</label>
-                <input type="text">
+            <div class="column-group">
+                <div class="column-desc">
+                    <label for="jobTitle">Job Title</label>
+                </div>
+                <div class="column-input">
+                    <input type="text">
+                </div>
             </div>
-            <div>
-                <label for="jobLocation">Location</label>
-                <input type="text">
+            <div class="column-group">
+                <div class="column-desc">
+                    <label for="jobLocation">Location</label>
+                </div>
+                <div class="column-input">
+                    <input type="text">
+                </div>
             </div>
-            <div>
-                <label for="jobStart">Start</label>
-                <input type="text">
-                <label for="jobEnd">End</label>
-                <input type="text">
+            <div class="column-group">
+                <div class="column-desc">
+                    <label for="jobStart">Start</label>
+                </div>
+                <div class="column-input">
+                    <input type="text">
+                </div>
             </div>
-            <div>
-                <label for="desc">Description</label>
-                <input type="text">
+            <div class="column-group">
+                <div class="column-desc">
+                    <label for="jobEnd">End</label>
+                </div>
+                <div class="column-input">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="column-group">
+                <div class="column-desc">
+                    <label for="desc">Description</label>
+                </div>
+                <div class="column-input">
+                    <input type="text">
+                </div>
             </div>
             <!-- Skills -->
             <div><h1>Skills</h1></div>
-            <div>
-                <label for="skill">Skills</label>
-                <input type="text" placeholder="HTML, CSS, JavaScript, ...">
+            <div class="column-group">
+                <div class="column-desc">
+                    <label for="skill">Skills</label>
+                </div>
+                <div class="column-input">
+                    <input type="text">
+                </div>
             </div>
             <div><button>Submit</button></div>
         </section>
-        <section class="preview column">
+        <!-- Preview Section -->
+        <section class="preview column-preview">
             <div class="resume-paper">
-                <div class="resume-header">
+                <div class="preview-header">
                     <div class="name"><h1>First Middle Last</h1></div>
                     <div class="contact">
                         <p id="email">johndoe@gmail.com</p>
-                        <p id="phone">(123)456-7890</p>
+                        <p>&nbsp; &bull; &nbsp;</p>
+                        <p id="phone">(123) 456-7890</p>
+                        <p>&nbsp; &bull; &nbsp;</p>
                         <p id="website">github.io</p>
                     </div>
                 </div>
-                <div class="resume-content">
+                <div class="preview-container">
+                    <div class="objective">
+                        <div class="preview-desc"><h1>Objective</h1></div>
+                        <div><hr></div>
+                        <div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi quisquam sequi hic commodi voluptatem quidem magnam excepturi ullam necessitatibus explicabo nemo quam illo, cumque sapiente id laborum dolor culpa. Doloremque.</p></div>
+                    </div>
+                    <div class="education">
+                        <div class="preview-desc"><h1>Education</h1></div>
+                        <div><hr></div>
+                        <div id="education-degree" class="">
+                            <p id="degree">BS</p>
+                            <p id="major">Computer Science</p>
+                        </div>
+                        <div id="education-college" class="">
+                            <p id="school-name">Community College</p>
+                            <p id="school-location">City, STATE</p>
+                        </div>
+                    </div>
+                    <div class="work-experience">
+                        <div class="preview-desc"><h1>Work Experience</h1></div>
+                        <div><hr></div>
+                        <div><p>Job Title</p></div>
+                        <div><p>Job Location</p></div>
+                        <div><p>Year Start</p></div>
+                        <div><p>Year End</p></div>
+                        <div><p>Description</p></div>
+                    </div>
+                    <div class="skills">
+                        <div class="preview-desc"><h1>Skills</h1></div>
+                        <div><hr></div>
 
+                    </div>
                 </div>
             </div>
         </section>

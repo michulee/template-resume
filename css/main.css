@@ -22,7 +22,11 @@ header, section {
 
 /* change size of fields */
 input {
-    
+    min-width: 400px;
+}
+
+label {
+    padding-right: 10px;
 }
 
 /* Content */
@@ -35,9 +39,51 @@ input {
 }
 
 /* https://stackoverflow.com/questions/44645465/when-using-height-100vh-for-the-container-vertical-scrollbar-appears */
-.column {
-    flex: 50%;
-    /* height: 100vh; */
-    /* height: 100%; */
-    /* height: calc(100% - 10px); */
+.column-preview {
+    /* flex: 50%; */
+    width: 794px;
+    height: 1123px;
+}
+
+.column-group {
+    display: flex;
+}
+
+.column-desc {
+    flex: 1;
+    text-align: right;
+    min-width: 150px;
+}
+
+.column-input {
+    flex: 1;
+}
+
+.template {
+
+}
+
+/* PREVIEW */
+/* Header */
+.name {
+    text-align: center;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.preview-header {
+    margin: 96px 0 0 0;
+}
+
+.preview-desc {
+    margin-top: 20px;
+}
+
+/* Container */
+/* https://papersize.co/a-paper-sizes-in-pixels/ */
+/* A4 Paper is 96 PPI and 794px x 1123px */
+.preview-container {
+    margin: 0 96px;
 }
