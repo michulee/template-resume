@@ -9,7 +9,7 @@ html, body, h1, p {
 }
 
 body {
-    /* height: 100vh; */
+    /* overflow: hidden; */
 }
 
 header {
@@ -47,13 +47,21 @@ label {
 }
 
 .column-info {
-    /* flex: 50%; */
+    flex: 50%;
     background-color: #FAFAFA;
+    overflow: scroll;
+}
+
+.preview-container {
+    background-color: gray;
+    flex: 50%;
+    overflow: scroll;
 }
 
 /* https://stackoverflow.com/questions/44645465/when-using-height-100vh-for-the-container-vertical-scrollbar-appears */
 .column-preview {
-    /* flex: 50%; */
+    background-color: white;
+    margin: 0 auto;
     width: 794px;
     height: 1123px;
 }
@@ -88,15 +96,14 @@ label {
 }
 
 .preview-header {
-    margin: 96px 0 0 0;
+    /* margin top moves top of container down instead of shrinking content */
+    /* margin: 96px 0; */
+    /* padding top keeps container position, shrinks content */
+    padding-top: 96px;
 }
 
 .preview-desc {
     margin-top: 20px;
-}
-
-.preview-container {
-    /* background-color: green; */
 }
 
 /* column preview is above */
@@ -109,6 +116,7 @@ label {
 /* https://papersize.co/a-paper-sizes-in-pixels/ */
 /* A4 Paper is 96 PPI and 794px x 1123px */
 .preview-content {
+    /* margin 0 96px keeps size of container, shrinks inside */
     margin: 0 96px;
     /* background-color: pink;; */
 }

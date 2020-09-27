@@ -9,9 +9,15 @@ document.addEventListener("keyup", function(event) {
 });
 
 // Click Mapping
+// Submit Button
 document.getElementById("submit").addEventListener("click", function(event) {
     update();
 });
+
+// Add Button
+
+
+// Remove Button
 
 function update() {
     //Basic Information
@@ -26,6 +32,7 @@ function update() {
 
     var website = document.getElementById("website-input").value;
     document.getElementById("website").innerHTML = website;
+    document.getElementById("website").setAttribute("href", website);
 
     //Objective
     var objective = document.getElementById("objective-input").value;
