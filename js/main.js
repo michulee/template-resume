@@ -19,7 +19,17 @@ document.getElementById("submit").addEventListener("click", function(event) {
 
 // Remove Button
 
+var list = [];
+function setInnerHTML(id) {
+    var value = document.getElementById(id).value;
+}
+
 function update() {
+    // potential to make a function for below?
+    // put all ids in an array, array as parameter of a function, 
+    // https://adrianmejia.com/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/
+    // DATA STRUCTURES: arrays, collections??, hashmaps, list
+
     //Basic Information
     var name = document.getElementById("name-input").value;
     document.getElementById("name").innerHTML = name;
